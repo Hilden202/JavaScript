@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <script>
+        function changeText() {
+            document.getElementById('mytext').innerHTML = 'Hello World igen!';
+        }
+    </script>
+     <!-- <script src="script/01script.js" defer></script> -->
+</head>
+
+<body>
+
+    <ul id="menu"></ul>  
+
+    <div id="mytext">
+        <h1>Rubrik</h1>
+    </div>
+
+<div id="counter"></div>
+
+    <input type="button" value="Klicka här" onclick="document.getElementById('mytext').innerHTML = 'Hello World!'">
+    <input type="button" value="Klicka här istället" onclick="changeText()">
+    <input type="button" value="Klicka här FÖR ALERT" onclick="helloAlert('Viktig info!!!')">
+    <input type="button" value="Klicka här FÖR Console" onclick="helloConsole('Annan info för konsollen')">
+
+    <script src="script/01script.js"></script>
+    <script src="script/menu.js"></script>
+</body>
+
+</html>

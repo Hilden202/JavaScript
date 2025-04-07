@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+
+<body>
+    <ul id="menu"></ul>
+    <h1>Kalkylator</h1>
+    <input type="text" id="tal1" placeholder="Första talet">
+    <span id="operator"> + </span>
+    <input type="text" id="tal2" placeholder="Andra talet">
+    <span> = </span>
+    <span id="resultat">0</span>
+    <input type="button" value="Beräkna" onclick="calculate()">
+    <input type="button" value="Rensa" onclick="clearFields()"><br>
+    <input type="checkbox" id="multiply" onchange="change()">multiplicera istället
+    
+    <h1>Boka hotell</h1>
+    Boka från: <input type="date" onchange="changedate(this.value)"><br>
+    Boka till: <input type="date" id="date2"><br>
+
+
+    <h1>Köpa bil</h1>
+    <input type="range" min="10" max="1000" value="300" oninput="changeImage(this.value)"><br>
+    <img src="images/car.jpg" id="bilen" alt="bil" width="300"><br>
+    <div><span id="price">0</span> kronor</div>
+
+    <h1>Bakgrund</h1>
+    <input type="color" oninput="changeColor(this.value)"><br>
+
+
+
+    <script src="script/02script.js"></script>
+    <script src="script/menu.js"></script>
+</body>
+
+</html>
